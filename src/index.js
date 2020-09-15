@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 //import App from "./App";
-const App =() =>{
-  return(<div>hi</div>);
-}
+const printname = (name) =>{return <div>{name}</div>}
+const App = <div>hi{printname('test')}</div>;
 
 
 
-ReactDOM.render(<App />, document.getElementById("root"));
+
+ReactDOM.render(App, document.getElementById("root"));
